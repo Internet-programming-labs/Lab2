@@ -1,0 +1,108 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.header{
+    margin: 0;
+    padding: 0 5%;
+}
+
+.navigation{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation > ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation > ul > li{
+    padding: 1%;
+}
+
+.navigation > ul > li > a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.navigation > ul > li:hover{
+    text-decoration: underline;
+}
+
+.logo img{
+    width: 5%;
+    height: 5%;
+    float: left;
+}
+
+
+/*
+
+.header{
+    padding: 0 5%;
+    margin: 0;
+    background: red;
+    width: 100%;
+    height: 5%;
+}
+
+
+
+.menu{
+    float:left;
+}
+.selected{
+    font-weight: bold;
+}
+
+.navigation{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navigation > ul li a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation > ul{
+    display: flex;
+    float: left;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navigation ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.navigation > ul > li:hover{
+    text-decoration: underline;
+}
+*/
+
+.welcome{
+    /*display: flex;*/
+    /*justify-content: center;*/
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: unset;
+}
+
+.welcome > h1{
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
