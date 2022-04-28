@@ -5,7 +5,8 @@ body{
 
 .header{
     margin: 0;
-    padding: 0 5%;
+    padding: 0 0;
+    display: flex;
 }
 
 .navigation{
@@ -23,7 +24,14 @@ body{
 }
 
 .navigation > ul > li{
-    padding: 1%;
+    padding: 10px;
+}
+.navigation > ul
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .navigation > ul > li > a{
@@ -38,9 +46,8 @@ body{
 }
 
 .logo img{
-    width: 5%;
-    height: 5%;
-    float: left;
+    width: 108px;
+    /*float: left;*/
 }
 
 
