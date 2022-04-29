@@ -1,5 +1,60 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+html, body
+{
+    font-family: Montserrat;
+}
+
+.media img
+{
+    position: absolute;
+    max-width: 100%;
+    z-index: 2;
+}
+
+.hero_container
+{
+    position: absolute;
+    top: 150px;
+    width: 45%;
+    z-index: 10;
+    color: white;
+    margin: 0 0 0 5%;
+}
+
+@media(max-width: 874px)
+{
+    .media img
+    {
+        padding: 50px 0 0 0;
+        position: initial;
+    }
+    .hero_container
+    {
+        position: initial;
+        color: #000;
+        text-align: center;
+        margin: 0 auto;
+        width: 88%;
+    }
+}
+
+.hero_item
+{
+
+}
 
 
+
+/*
 .background_1{
     width: 100%;
     position: relative;

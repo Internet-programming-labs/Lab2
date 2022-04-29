@@ -1,8 +1,31 @@
+html
+{
+    box-sizing: border-box;
+}
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    background-image: url("../images/lake_and_mountains.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.wrapper
+{
+    margin: 0 25px;
+    width: 100%;
+}
 
 .background img
 {
     width: 100%;
-    position: absolute;
+    position: relative;
     pointer-events: none;
 }
 
@@ -10,14 +33,13 @@
 {
     width: 100%;
     margin: 0 25px;
-    position:absolute;
     display: flex;
     justify-content: center;
 }
 
 .heroItem
 {
-    position:absolute;
+    position: relative;
     top: 50px;
     text-align: center;
 }

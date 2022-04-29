@@ -1,0 +1,96 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul, ol, li
+{
+    list-style: none;
+    padding: 0;
+}
+
+img
+{
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html, body
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    color: #000;
+    font-family: Montserrat;
+}
+
+body
+{
+    background-image: url("../images/lake_and_mountains.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.wrapper
+{
+    width: 88%;
+    margin: 0 auto;
+}
+
+.welcome_container
+{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.welcome_heading
+{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.welcome_description
+{
+
+}
+
+.welcome_buttons
+{
+    display: inline-flex;
+    padding: 10px 0;
+}
+
+.projects_link
+{
+    background-color: #0067B8;
+    border-radius: 15px;
+    display:flex;
+    min-height: 40px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 36px;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

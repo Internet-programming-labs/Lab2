@@ -1,15 +1,57 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
 body
 {
-
-}
-
-.testDiv
-{
-    margin: 100px;
-    position:absolute;
-}
-
-.testHeadingClass
-{
     margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{
+    margin: 0 25px;
+}
+.projects_show_space
+{
+    position: relative;
+    top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+}
+
+.project_bar
+{
+    width: 400px;
+    padding: 0 25px;
+}
+
+.project_bar img
+{
+    width: 100%;
+}
+
+.container_button_check_project
+{
+
+}
+
+.button_check_project
+{
+    position: relative;
+    top: 35px;
+    background-color: #0067B8;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }

@@ -12,12 +12,19 @@
     font-size: 35px;
 }
 
+.c-heading
+{
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 25px;
+}
+
 .c-paragraph-2{
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 10px 0 3px 0;
     font-size: 20px;
-
 }
 
 .c-paragraph-1{
