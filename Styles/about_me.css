@@ -13,116 +13,67 @@ html, body
     font-family: Montserrat;
 }
 
-.media img
+._ibg
+{
+    position: relative;
+}
+
+._ibg img
 {
     position: absolute;
     max-width: 100%;
-    z-index: 2;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -10;
 }
 
-.hero_container
+.media_content img
+{
+    position: relative;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.media_content
+{
+    width: 100%;
+}
+
+.hero_item
 {
     position: absolute;
-    top: 150px;
+    margin: 10% 0 0 0;
     width: 45%;
-    z-index: 10;
+    padding: 0 0 0 25px;
     color: white;
-    margin: 0 0 0 5%;
 }
 
 @media(max-width: 874px)
 {
     .media img
     {
-        padding: 50px 0 0 0;
+        padding: 20px 0 0 0;
         position: initial;
     }
-    .hero_container
+    .hero_item
     {
         position: initial;
-        color: #000;
-        text-align: center;
         margin: 0 auto;
         width: 88%;
+        color: #000;
+        text-align: center;
     }
 }
 
-.hero_item
+@media(max-width: 670px)
 {
-
+    .media img
+    {
+        object-fit: cover;
+        height: 65%;
+    }
 }
-
-
-
-/*
-.background_1{
-    width: 100%;
-    position: relative;
-}
-
-.background_1 img{
-    width: 100%;
-}
-
-.background_1_fitting{
-    position:absolute;
-}
-
-.background_1_text{
-    transform: translateY(125%);
-    margin-left: 25%;
-    max-width: 430px;
-    font-size: 17px;
-    color: white;
-}
-
-.background_1_text h1{
-    margin: 0;
-}
-
-.background_1_text p{
-    margin: 0;
-    padding-top: 5%;
-}
-
-.test_container{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.test_box1{
-    width: 100px;
-    height: 100px;
-    border: 1px solid silver;
-}
-
-.test_box2{
-    width: 100px;
-    height: 100px;
-    border: 1px solid silver;
-}
-
-/*
-.present{
-    text-align: center;
-    margin: 0 auto;
-}
-
-.present_bg_text_container{
-    position: absolute;
-    display: flex;
-}
-
-.present_bg_text_panel{
-    background-color: red;
-}
-
-.some_test{
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-}
-*/
-
-
-

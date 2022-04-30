@@ -16,7 +16,7 @@
             <h1 class = "welcome_heading">Добро пожаловать</h1>
             <p class = "welcome_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor explicabo facere incidunt maxime molestiae voluptas!</p>
             <div class = "welcome_buttons">
-                <a href = "" class = "projects_link">Посмотреть проекты</a>
+                <a href = "projects.php" class = "projects_link">Посмотреть проекты</a>
             </div>
         </div>
     </div>
