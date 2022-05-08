@@ -1,6 +1,7 @@
 
 
 <header class = "header">
+    <link rel = "stylesheet" href = "Styles/header.css">
     <div class = "header_content">
         <a class = "logo">Amnis</a>
         <nav class = "navigation">
@@ -10,6 +11,8 @@
                 <li><a href="for_tests.php"> Моя профессия</a></li>
                 <li><a href="projects.php"> Проекты</a></li>
                 <li><a href="gallery.php"> Галлерея</a></li>
+                <li><a href="sign_in.php"> Войти</a></li>
+                <li><a href="sign_up.php"> Зарегистрироваться</a></li>
             </ul>
         </nav>
     </div>
