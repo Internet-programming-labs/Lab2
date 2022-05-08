@@ -1,0 +1,56 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    background-image: url(../images/stones.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery_container
+{
+    color: white;
+}
+
+.gallery
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+}
+
+.gallery a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.gallery img
+{
+    width: 70%;
+    margin: 50px 0;
+}
+
+#galleryImage
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.elementImage
+{
+    height: 200px;
+}
