@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,18 +16,28 @@
 <?php require "header.php";?>
 
 <div class = "sing_in_form_container">
-    <form class = "sing_in_form" action = "" method = "">
+    <form class = "sing_in_form" action = "core/signup.php" method = "post" enctype = "multipart/form-data">
         <label>ФИО</label>
-        <input type = "text" placeholder = "Введите ФИО">
+        <input type = "text" name = "full_name" placeholder = "Введите ФИО">
         <label>Логин</label>
-        <input type = "text" placeholder = "Введите логин">
+        <input type = "text" name = "login" placeholder = "Введите логин">
         <label>Почта</label>
-        <input type = "email" placeholder = "Введите почту">
+        <input type = "email" name = "email" placeholder = "Введите почту">
+        <label>Изображение профиля</label>
+        <input type = "file" name = "avatar">
         <label>Пароль</label>
-        <input type = "password" placeholder = "Введите пароль">
+        <input type = "password" name = "password" placeholder = "Введите пароль">
         <label>Подтверждение пароля</label>
-        <input type = "password" placeholder = "Повторите пароль">
-        <button>Войти</button>
+        <input type = "password" name = "password_confirm" placeholder = "Повторите пароль">
+        <button type = "submit">Зарегестрироваться</button>
+
+            <?php
+                if($_SESSION['message'])
+                {
+                    echo ' <p class = "msg">' . $_SESSION['message'] . '</p>;';
+                }
+                unset($_SESSION['message']);
+            ?>
     </form>
 </div>
 </body>

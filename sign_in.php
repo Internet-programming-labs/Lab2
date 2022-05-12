@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,12 +15,19 @@
     <?php require "header.php";?>
 
     <div class = "sing_in_form_container">
-        <form class = "sing_in_form" action = "" method = "">
+        <form class = "sing_in_form" action = "core/signin.php" method = "post">
             <label>Логин</label>
-            <input type = "text" placeholder = "Введите логин">
+            <input type = "text" name = "login" placeholder = "Введите логин">
             <label>Пароль</label>
-            <input type = "password" placeholder = "Введите пароль">
-            <button>Войти</button>
+            <input type = "password" name = "password" placeholder = "Введите пароль">
+            <button type = "submit">Войти</button>
+            <?php
+                if($_SESSION['message'])
+                {
+                    echo ' <p class = "msg">' . $_SESSION['message'] . '</p>';
+                }
+                unset($_SESSION['message']);
+            ?>
         </form>
     </div>
 </body>
