@@ -43,6 +43,11 @@ class DB {
     {
         return @mysqli_fetch_object($object);
     }
+//возвращает ассоциированную запись
+    public static function fetch_assoc($object)
+    {
+        return @mysqli_fetch_assoc($object);
+    }
 
 //возвращает запись в виде массива
     public static function fetch_array($object)

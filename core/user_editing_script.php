@@ -1,6 +1,8 @@
 <?php
     session_start();
-    require 'connect.php';
+    //require 'connect.php';
+    require_once 'DB.php';
+    DB::getInstance();
     $full_name = $_POST['full_name'];
     $login = $_POST['login'];
     $email = $_POST['email'];
@@ -18,7 +20,8 @@
             $_SESSION['message'] = 'Ошибка при загрузке сообщения';
             header('Location: ../user_editing.php');
         }
-        mysqli_query($connect, "UPDATE `users` SET `full_name` = '$full_name', `login` = '$login', `email` = '$email', `password` = '$password', `avatar` = '$path', `privilege` = '$privilege' WHERE `users`.`id` = '$id'");
+        //mysqli_query($connect, "UPDATE `users` SET `full_name` = '$full_name', `login` = '$login', `email` = '$email', `password` = '$password', `avatar` = '$path', `privilege` = '$privilege' WHERE `users`.`id` = '$id'");
+        DB::query("UPDATE `users` SET `full_name` = '$full_name', `login` = '$login', `email` = '$email', `password` = '$password', `avatar` = '$path', `privilege` = '$privilege' WHERE `users`.`id` = '$id'");
         header('Location: ../site_users.php');
         unset($_SESSION['message']);
     }

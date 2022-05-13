@@ -30,7 +30,8 @@
         $users_count = mysqli_num_rows($check_user);
         for($i = 0; $i < $users_count; $i++)
         {
-            $user = mysqli_fetch_assoc($check_user);
+            //$user = mysqli_fetch_assoc($check_user);
+            $user = DB::fetch_assoc($check_user);
             echo
             '
                 <tr>

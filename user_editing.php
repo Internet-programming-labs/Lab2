@@ -1,9 +1,13 @@
 <?php
     session_start();
-    require 'core/connect.php';
+    //require 'core/connect.php';
+    require_once 'core/DB.php';
+    DB::getInstance();
     $id = $_GET['id'];
-    $check_user = mysqli_query($connect,"SELECT * FROM `users` WHERE `id` = '$id'");
-    $user = mysqli_fetch_assoc($check_user);
+    //$check_user = mysqli_query($connect,"SELECT * FROM `users` WHERE `id` = '$id'");
+    $check_user = DB::query("SELECT * FROM `users` WHERE `id` = '$id'");
+    //$user = mysqli_fetch_assoc($check_user);
+    $user = DB::fetch_assoc($check_user);
 ?>
 
 <!doctype html>
@@ -30,7 +34,7 @@
         <label>Изображение профиля</label>
         <input type = "file" name = "avatar">
         <label>Привилегия</label>
-        <input type = "text" name = "privilege">
+        <input type = "text" name = "privilege" value = <?php echo '"' . $user['privilege'] . '"' ?>>
         <label>Пароль</label>
         <input type = "password" name = "password" placeholder = "Введите пароль">
         <label>Подтверждение пароля</label>

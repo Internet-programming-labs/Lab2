@@ -1,8 +1,9 @@
 <?php
 
     session_start();
-    require_once 'connect.php';
-
+    //require_once 'connect.php';
+    require_once 'DB.php';
+    DB::getInstance();
 
     $full_name = $_POST['full_name'];
     $login = $_POST['login'];
@@ -21,7 +22,8 @@
         }
 
         $password = md5($password);
-        mysqli_query($connect, "INSERT INTO `users` (`id`, `full_name`, `login`, `email`, `password`, `avatar`) VALUES (NULL, '$full_name', '$login', '$email', '$password', '$path')");
+        //mysqli_query($connect, "INSERT INTO `users` (`id`, `full_name`, `login`, `email`, `password`, `avatar`) VALUES (NULL, '$full_name', '$login', '$email', '$password', '$path')");
+        DB::query("INSERT INTO `users` (`id`, `full_name`, `login`, `email`, `password`, `avatar`) VALUES (NULL, '$full_name', '$login', '$email', '$password', '$path')");
 
         $_SESSION['message'] = 'Регистрация прошла успешно!';
         header('Location: ../sign_in.php');
