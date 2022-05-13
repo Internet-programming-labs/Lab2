@@ -1,5 +1,11 @@
 <?php
     session_start();
+    require_once 'core/DB.php';
+    DB::getInstance();
+    if($_SESSION['user'])
+    {
+        header('Location: profile.php');
+    }
 ?>
 
 <!doctype html>

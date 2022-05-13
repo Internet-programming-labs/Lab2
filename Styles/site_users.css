@@ -1,0 +1,125 @@
+html
+{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+body
+{
+    font-family: Segoe UI;
+    color: #333;
+}
+
+.users_table_heading
+{
+    text-align: center;
+}
+
+.users_table_container
+{
+    margin: 0 auto;
+    width: 95%;
+    overflow: auto;
+
+}
+
+/*
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: orange;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 3px solid orange;
+}
+*/
+
+.users_table
+{
+    font-family: sans-serif;
+    border-spacing: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.users_table th
+{
+    /*background-color: #243a5e;*/
+    background-color: #2c7bba;
+    color: white;
+}
+
+.users_table td, th
+{
+    background-color: white;
+    box-shadow: 1px 3px 5px rgb(6 7 36 / 10%);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.users_table td img
+{
+    height: 100px;
+    pointer-events: none;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px rgba(6, 7, 36, 0.51);
+}
+
+.operations
+{
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.operations a
+{
+    padding: 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 1px 3px 5px rgba(6, 7, 36, 0.18);
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.edit
+{
+    background-color: #ffc93b;
+}
+
+.edit:hover
+{
+    background-color: #ffd35d;
+}
+
+.edit:active
+{
+    background-color: #fdd976;
+}
+
+.remove
+{
+    background-color: #f83947;
+}
+
+.remove:hover
+{
+    /*background-color: #ff2939;*/
+    background-color: #f64d58;
+}
+
+.remove:active
+{
+    background-color: #f85761;
+}

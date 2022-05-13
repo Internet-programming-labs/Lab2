@@ -1,0 +1,97 @@
+.html
+{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after
+{
+    box-sizing: inherit;
+}
+
+.sing_in_form_container
+{
+    position: relative;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Segoe UI;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.sing_in_form_container img
+{
+    width: 30%;
+    margin: 0 auto;
+    pointer-events: none;
+    border-radius: 15px;
+    box-shadow: 1px 3px 5px rgba(6, 7, 36, 0.51);
+}
+
+@media(max-width: 900px)
+{
+    .sing_in_form_container img
+    {
+        width: 60%;
+    }
+}
+
+@media(max-width: 600px)
+{
+    .sing_in_form_container img
+    {
+        width: 88%;
+    }
+}
+
+.sing_in_form_container a
+{
+    text-decoration: none;
+}
+
+.logout_buttons
+{
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+.logout
+{
+    background-color: #0178d7;
+    border-radius: 37px;
+    padding: 10px 36px;
+    margin: 24px 0 0 0;
+    color: white;
+    box-shadow: 1px 1px 5px black;
+}
+
+.userInformation_container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.userInformation_container div
+{
+    margin: 5px 0;
+}
+
+.userinfo_element
+{
+    display: flex;
+
+}
+
+.userinfo_element p
+{
+    margin: 0 20px 0 0;
+}
+
+.userinfo_element a
+{
+    color: black;
+}
