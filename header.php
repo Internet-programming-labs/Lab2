@@ -13,6 +13,7 @@
                 <li><a href="for_tests.php"> Моя профессия</a></li>
                 <li><a href="projects.php"> Проекты</a></li>
                 <li><a href="gallery.php"> Галлерея</a></li>
+                <li><a href="negative_image_page.php"> Негатив</a></li>
                 <?php
                     if(!$_SESSION['user'])
                     {
