@@ -3,7 +3,6 @@
 <head>
     <meta charset = "UTF-8">
     <title>My site</title>
-    <link rel = "stylesheet" href = "Styles/header.css">
     <link rel = "stylesheet" href = "Styles/about_me.css">
     <link rel = "stylesheet" href = "Styles/text_styles.css">
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -15,12 +14,11 @@
         <div class = "media">
             <div class = "media_content">
                 <div class = "hero_item">
-                <h1>This is hero</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam assumenda autem blanditiis consequuntur enim eveniet facere</p>
+                <h1>Привет</h1>
+                    <p>Меня зовут Саша, я учуть в ульяновском университете УлГТУ на профессию программиста. Хобби у меня соответствующее, программировать. А в программировании всех больше меня увлекают таки области, как исскуственный интеллект и трёхмерная графика</p>
                 </div>
                     <img src = "images/bg_about_me_1.png" alt = "bg_about_me_1">
             </div>
         </div>
-    <h1 style = "text-align: center;">You can see my projects</h1>
 </body>
 </html>

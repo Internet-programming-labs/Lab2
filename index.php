@@ -14,7 +14,7 @@
     <div class = "wrapper">
         <div class = "welcome_container">
             <h1 class = "welcome_heading">Добро пожаловать</h1>
-            <p class = "welcome_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor explicabo facere incidunt maxime molestiae voluptas!</p>
+            <p class = "welcome_description">Этот сайт был создан как лабараторная работа для предмета в УлГТУ "Интернет программирование"</p>
             <div class = "welcome_buttons">
                 <a href = "projects.php" class = "projects_link">Посмотреть проекты</a>
             </div>

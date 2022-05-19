@@ -4,8 +4,9 @@ $img = imagecreatetruecolor(300, 300);
 
 $imagePath = $_SESSION['image'];
 unset($_SESSION['image']);
-
 $imgExisted = imagecreatefromjpeg($imagePath);
+
+//$imgExisted = imagecreatefromjpeg($imagePath);
 $imageSize = getimagesize($imagePath);
 
 $blue = imagecolorallocate($imgExisted, 100, 100, 255);
@@ -27,7 +28,6 @@ for($y = 0; $y < $height; $y++)
         $changedColor = imagecolorallocate($imgExisted, 255 - $red, 255 - $green, 255 - $blue);
         imagesetpixel($imgExisted, $x, $y, $changedColor);
     }
-
 
 
 //$arr = array(array(1, 2 ,1), array(-1, 1, 1), array(0, 0, -1));
